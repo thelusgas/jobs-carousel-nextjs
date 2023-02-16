@@ -66,7 +66,7 @@ export function Carousel({ jobs }: { jobs: Job[] }) {
         .toLowerCase()
         .includes(filterByCompanyName.toLowerCase());
 
-      if (onlyLastSeven && postingDate >= sevenDaysAgo) {
+      if (onlyLastSeven && postingDate < sevenDaysAgo) {
         return false;
       }
 
