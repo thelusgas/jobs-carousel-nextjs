@@ -93,19 +93,19 @@ export function Carousel({ jobs }: { jobs: Job[] }) {
       />
 
       <div className={styles.slider}>
-        <div className={styles.cards}>
-          {filteredJobs.length > 0 ? (
-            filteredJobs.map((job, index) => (
+        {filteredJobs.length > 0 ? (
+          <div className={styles.cards}>
+            {filteredJobs.map((job, index) => (
               <JobCard
                 job={job}
                 ref={(r) => (ref.current[index] = r)}
                 key={`${job.jobTitle}-${job.companyName}-key-carousel`}
               />
-            ))
-          ) : (
-            <NoResults />
-          )}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <NoResults />
+        )}
       </div>
 
       <CarouselControls
