@@ -1,0 +1,34 @@
+@import '/../../styles/abstracts/media.css';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 100vw;
+  padding-inline: 2rem;
+  gap: 1rem;
+}
+
+.slider {
+  display: flex;
+
+  overflow: hidden;
+  width: 100%;
+  max-width: 100rem;
+}
+.cards {
+  display: flex;
+
+  gap: 8rem;
+
+  overflow-x: auto;
+
+  width: 100%;
+  padding: 0.5rem 8rem;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}

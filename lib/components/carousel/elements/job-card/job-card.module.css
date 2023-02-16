@@ -1,0 +1,75 @@
+.wrapper {
+  display: grid;
+  align-items: start;
+
+  grid-template-rows: auto 5rem auto 10rem;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0.5rem;
+
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+
+  padding: 1rem;
+
+  row-gap: 0.5rem;
+
+  scroll-snap-align: center;
+  overflow-y: hidden;
+  min-width: clamp(20rem, -5rem + 100vw, 85rem);
+
+  border-radius: 1rem;
+}
+
+@media (min-width: 60rem) {
+  .wrapper {
+    padding: 2rem 4rem;
+    grid-template-rows: auto 20rem 20rem;
+    gap: 3rem;
+  }
+}
+
+.image {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 0.5rem;
+
+  box-shadow: var(--box-shadow-heavy);
+}
+
+@media (min-width: 60rem) {
+  .image {
+    grid-column: 1 / span 1;
+  }
+}
+
+.job_description {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 1;
+
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  max-height: 100%;
+
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-size: var(--font-base);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow-heavy);
+}
+
+@media (min-width: 60rem) {
+  .job_description {
+    grid-row: 3 / span 1;
+    padding: 3rem;
+  }
+}

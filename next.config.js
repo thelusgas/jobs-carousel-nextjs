@@ -3,6 +3,10 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [{ hostname: '**' }],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

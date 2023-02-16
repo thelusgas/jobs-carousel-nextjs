@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 100%;
+
+  width: 100%;
+  min-width: 20rem;
+
+  text-align: center;
+}
+
+.warning {
+  font-size: var(--font-super-large);
+  color: var(--color-secondary);
+
+  border: 1px solid var(--color-secondary);
+  border-radius: 50%;
+
+  padding: 0.5rem 2.25rem;
+}

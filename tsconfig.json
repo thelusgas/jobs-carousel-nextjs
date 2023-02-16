@@ -21,7 +21,13 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@api/*": ["./lib/api/*"],
+      "@assets/*": ["./lib/assets/*"],
+      "@components/*": ["./lib/components/*"],
+      "@helpers/*": ["./lib/helpers/*"],
+      "@interfaces/*": ["./lib/interfaces/*"],
+      "@styles/*": ["./lib/styles/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
